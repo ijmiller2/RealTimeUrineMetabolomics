@@ -1,0 +1,26 @@
+
+{% extends base %}
+
+{% block title %}Bokeh Server{% endblock %}
+
+{% block postamble %}
+  <style>
+    {% include 'style.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div class="content">
+    <h1>Urine Metabolomics Data Visualizer</h1>
+
+      <p>
+        Explore the metabolic phenotypes of Subject 1 (red) and Subject 2 (blue)
+        using interactive tooltips and a dropdown menu.
+      </p>
+
+    <div class="custom-bokeh-div">
+      {{   super() }}
+    </div>
+
+  </div>
+{% endblock %}
